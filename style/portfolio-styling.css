@@ -1,0 +1,173 @@
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+body {
+    background-color: #E2ECEE;
+}
+
+p {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.font-pixel {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.font-tn {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
+}
+
+.add-outline {
+    outline: 1px solid black;
+}
+
+.text-large {
+    font-size: 45px;
+}
+
+.text-super-lg {
+    font-size: 80px;
+}
+
+.indent-lg {
+    text-indent: 9vw;
+}
+
+.indent-sm {
+    text-indent: 4vw;
+}
+
+.primary-green {
+    color: #3D636C;
+}
+
+.bg-primarygreen {
+    background-color: #3D636C;
+}
+
+.bg-gp {
+    background-color: #E2ECEE;
+}
+
+.accent-green {
+    color: #5C96A3; 
+}
+
+.brad-25 {
+    border-radius: 25px;
+}
+
+.mr-sm {
+    margin-right: 8px;
+}
+
+.btn-custom {
+    border: none;
+    font-family: 'Tilt Neon', sans-serif;
+    min-width: 190px;
+    min-height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: #6F969F;
+    transition: all 0.2s ease;
+    /* background-color: red; */
+}
+
+.btn-custom:hover, .btn-sm-custom:hover{
+    background-color: #6EC58A;
+}
+
+.navbar-brand {
+    font-size: 30px!important;
+}
+
+.nav-item {
+    font-size: 20px!important;
+}
+
+.btn-sm-custom {
+    border: none;
+    font-family: 'Tilt Neon', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #6F969F;
+}
+
+.btn-custom:hover {
+    border: 10px;
+}
+
+.flex-item {
+    flex-shrink: 0;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.horizontal-scroll {
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.card {
+    background-color: transparent!important;
+}
+
+.card:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px!important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #5C96A3!important;
+}
+
+.icon {
+    font-size: 50px;
+    align-items: center;
+}
+
+.skill-card {
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+    font-family: 'Tilt Neon', sans-serif;
+    min-height: 50px;
+    min-width: 295px;
+    border-radius: 3px;
+    background-color: rgba(11, 66, 79, 0.35);
+    align-items: center;
+    /* background-color: red; */
+}
+
+@media(max-width: 990px) {
+    .personal-pic {
+        margin-top: 5rem;
+    }
+
+    .center-skill {
+        justify-content: center;
+    }
+}
+
+/* .modal-content {
+    background-color: #E2ECEE!important;
+} */

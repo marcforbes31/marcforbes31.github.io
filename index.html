@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Forbes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/portfolio-styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Pixelify+Sans:wght@500&family=Poppins:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <link rel="icon" href="assets/portfolio_logo.png">
+
+</head>
+<body>
+    <nav id="nav-section">
+    </nav>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="font-kanit text-large">Greetings, fellow viewers.</span><br>
+                        <span class="font-kanit text-large">It is I,</span><br>
+                        <p class="font-kanit text-super-lg indent-sm primary-green">MARC</p>
+                        <p class="font-kanit text-super-lg indent-lg accent-green">FORBES</p>
+                        <p class="text-center" style="opacity: 0.6;">A Software Engineering undergraduate who is diligent, determined, passionate, and constantly curious about new technologies. Always up for challenges, willing to learn new skills/knowledge, and take advice from others to always remain competent in my field.</p>
+                        <div class="mt-5 text-center">
+                            <a href="/assets/MarcForbes_Resume_Updated.pdf" download><button class="btn-custom">Download Resume</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 personal-pic">
+                        <img src="assets/marc.png" class="rounded-circle img-fluid mx-auto d-block" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span class="font-kanit text-large">What Is There To Know <span class="primary-green">About Me</span>?</span>
+                </div>
+                <div class="flex py-5 horizontal-scroll">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-person-circle text-large accent-green"></i></p>
+                          <h5 class="card-title">Ethnicity</h5>
+                          <p class="card-text">Sino Kadazan</p>
+                          <p class="card-text">If you're unfamiliar with the term, it basically means that I'm half Kadazan and half Chinese. Dad's Kadazan, mom's Chinese.</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-cake-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Date Of Birth</h5>
+                          <p class="card-text">December 31, 2000 (<span id="my-age"></span> years old)</p>
+                          <p class="card-text">Yes, I was born on that date.</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-house-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Home</h5>
+                          <p class="card-text">Penampang, Sabah.</p>
+                          <p class="card-text">I come from a very humble place, surrounded by good, hardworking people. Not to mention, the food is absolutely incredible!</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-mortarboard-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Lastest Education</h5>
+                          <p class="card-text">Universiti Malaysia Sabah (UMS)</p>
+                          <p class="card-text">Bachelor's Degree In Computer Science (Software Engineering)</p>
+                          <button class="btn-sm-custom rounded-pill font-tn" onclick="showEduHistoryModal()" id="expand-eduhistory">View Entire Education History</button>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-chat-dots-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Languages</h5>
+                          <p class="card-text">English, Bahasa Malaysia</p>
+                          <p class="card-text">As of this moment I can confidently say I speak fluently in these two languages. Although, I did take Japanese classes for a few semesters and could probably understand just a little bit of Mandarin.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="font-kanit text-large">What <span class="primary-green">Skills</span> Do I Possess?</span>
+                </div>
+
+                <h2 class="font-kanit">Prototyping Software</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="figma" data-level="35">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-figma"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:figma-light" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Figma</span>
+                            <span class="badge bg-success" id="percent-figma" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="font-kanit">Programming Languages</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="java" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-java"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:java-dark" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Java</span>
+                            <span class="badge bg-success" id="percent-java" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="cpp" data-level="60">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-cpp"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="devicon:cplusplus" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">C++</span>
+                            <span class="badge bg-success" id="percent-cpp" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="c-lang" data-level="60">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-c-lang"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="devicon:c" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">C</span>
+                            <span class="badge bg-success" id="percent-c-lang" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="python" data-level="50">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-python"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:python-dark" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Python</span>
+                            <span class="badge bg-success" id="percent-python" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="html" data-level="90">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-html"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:html-5" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">HTML</span>
+                            <span class="badge bg-success" id="percent-html" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="css" data-level="85">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-css"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:css-3" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">CSS</span>
+                            <span class="badge bg-success" id="percent-css" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="js" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-js"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:javascript" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">JavaScript</span>
+                            <span class="badge bg-success" id="percent-js" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="php" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-php"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:php-dark" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">PHP</span>
+                            <span class="badge bg-success" id="percent-php" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="groovy" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-groovy"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="devicon:groovy" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Groovy</span>
+                            <span class="badge bg-success" id="percent-groovy" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="font-kanit">Databases</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="mysql" data-level="85">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-mysql"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="skill-icons:mysql-dark" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">MySQL</span>
+                            <span class="badge bg-success" id="percent-mysql" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="font-kanit">Frameworks & Libraries</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="bs" data-level="95">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-bs"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:bootstrap" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Bootstrap</span>
+                            <span class="badge bg-success" id="percent-bs" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="jq" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-jq"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="devicon:jquery-wordmark" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">jQuery</span>
+                            <span class="badge bg-success" id="percent-jq" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="cucumber" data-level="90">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-cucumber"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:cucumber" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Cucumber</span>
+                            <span class="badge bg-success" id="percent-cucumber" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="grails" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-grails"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:grails" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Grails</span>
+                            <span class="badge bg-success" id="percent-grails" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="spring" data-level="85">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-spring"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="logos:spring-icon" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Java Spring</span>
+                            <span class="badge bg-success" id="percent-spring" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="font-kanit">Version Control</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="git" data-level="80">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-git"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="devicon:git" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">Git</span>
+                            <span class="badge bg-success" id="percent-git" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="font-kanit">Concepts</h2>
+                <div class="flex center-skill wrap mb-5">
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="api" data-level="95">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-api"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="eos-icons:api" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">REST API</span>
+                            <span class="badge bg-success" id="percent-api" style="display: none;"></span>
+                        </div>
+                    </div>
+
+                    <div class="cursor-pointer" onclick = "showProgress(this)" id="ajax" data-level="90">
+                        <div class="progress" role="progressbar" style="height: 5px">
+                            <div class="progress-bar bg-success" id="pb-ajax"></div>
+                        </div>
+                        <div class="skill-card">
+                            <iconify-icon icon="subway:round-arrow-3" class="icon"></iconify-icon>
+                            <span class="fs-3 text-white">AJAX</span>
+                            <span class="badge bg-success" id="percent-ajax" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span class="font-kanit text-large">What About My <span class="primary-green">Experience</span>?</span>
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2023</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <img src="assets/dl-logo.png" class="img-fluid rounded-circle mx-auto d-block mb-3" alt="" style="max-width: 120px;">
+                          <h5 class="card-title">Direct Lending Sdn Bhd</h5><br>
+                          <p class="card-text">Software Engineer Intern</p>
+                          <p class="card-text blockquote-footer">27th March 2023 to 8th Sept 2023 (24 Weeks)</p>
+                        </div>
+                    </div>
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <img src="assets/dl-logo.png" class="img-fluid rounded-circle mx-auto d-block mb-3" alt="" style="max-width: 120px;">
+                          <h5 class="card-title">Direct Lending Sdn Bhd</h5><br>
+                          <p class="card-text">Full-time Junior Software Engineer</p>
+                          <p class="card-text blockquote-footer">2nd October 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span class="font-kanit text-large">Curious About The <span class="primary-green">Projects</span> I Have Done?</span>
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2023</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-person-vcard-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Personal Portfolio</h5><br>
+                          <p class="card-text blockquote-footer">Personal Project</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-upc-scan text-large accent-green"></i></p>
+                          <h5 class="card-title">Voucher System</h5><br>
+                          <p class="card-text blockquote-footer">Internship Project</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-controller text-large accent-green"></i></p>
+                          <h5 class="card-title">Tic-Tac-Toe</h5><br>
+                          <p class="card-text blockquote-footer">Personal Project</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2022</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-book-half text-large accent-green"></i></p>
+                          <h5 class="card-title">UMS Online Used Book Marketplace</h5><br>
+                          <p class="card-text blockquote-footer">Final Year Project</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2021</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-cart-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Restaurant Ordering System</h5><br>
+                          <p class="card-text blockquote-footer">Assignment Project</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2020</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-car-front-fill text-large accent-green"></i></p>
+                          <h5 class="card-title">Parking Management System Using Java GUI</h5><br>
+                          <p class="card-text blockquote-footer">Assignment Project</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="activities" class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span class="font-kanit text-large">How About The <span class="primary-green">Activities</span> I Joined?</span>
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2022</p>
+                </div>
+
+                <div class="flex wrap justify-content-center">
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-android text-large accent-green"></i></p>
+                          <h5 class="card-title">HarmonyOS Webinar</h5><br>
+                          <p class="card-text blockquote-footer">Hosted By UMS</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-github text-large accent-green"></i></p>
+                          <h5 class="card-title">GitHub Workshop</h5><br>
+                          <p class="card-text blockquote-footer">Hosted By UMS</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-laptop text-large accent-green"></i></p>
+                          <h5 class="card-title">Into The Industry 2.0 Tech Career Webinar</h5><br>
+                          <p class="card-text blockquote-footer">Hosted By UMS</p>
+                        </div>
+                    </div>
+
+                    <div class="card flex-item" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="text-center"><i class="bi bi-laptop text-large accent-green"></i></p>
+                          <h5 class="card-title">Martech Trends To Watch In 2022 Webinar</h5><br>
+                          <p class="card-text blockquote-footer">Hosted By UMS</p>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="mt-5">
+                    <p class="font-kanit fs-3 text-center">2019</p>
+                    <div class="flex wrap justify-content-center">
+                        <div class="card flex-item" style="width: 18rem;">
+                            <div class="card-body">
+                              <p class="text-center"><i class="bi bi-piggy-bank-fill text-large accent-green"></i></p>
+                              <h5 class="card-title">Sponsorship Committee Member</h5><br>
+                              <p class="card-text blockquote-footer">UMS Animation Arts Club</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+       <div id="edu-history"></div>
+
+    </main>
+    <footer>
+        <div id="footer" class="mt-5">
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+<script>
+
+    $(document).ready(function() {
+        $(this).scrollTop(0);
+        loadEducationHistory();
+        calculateAge();
+        $("#nav-section").load("components/navbar.html");
+        $("#footer").load("components/footer.html");
+    });
+    
+    function calculateAge() {
+        const yearBorn = 2000;
+        let currentYear = new Date().getFullYear();
+        let age = currentYear - yearBorn;
+        $("#my-age").text(age);
+    }
+
+    function showEduHistoryModal() {
+        $("#edu-history-modal").appendTo("body").modal("show");
+    }
+
+    function loadEducationHistory() {
+        $("#edu-history").load("components/eduhistory.html");
+    }
+
+    function showProgress(skillBoxs) {
+        let skillBox = $(skillBoxs);
+        let value = skillBox.attr("data-level");
+        let id = skillBox.attr("id");
+
+        if(value) {
+            let progressBarId = "#pb-" + id;
+            let progressPercentId = "#percent-" + id;
+            let currentWidth = $(progressBarId).width();
+            let targetWidth = parseFloat(value);
+
+            if($(progressPercentId).is(":visible")) {
+                return;
+            }
+            
+            $(progressBarId).animate({
+                width: targetWidth + "%"
+            }, 8, () => {
+                $(progressPercentId).html(targetWidth + "%").show();
+            });
+        }
+    }
+</script>
+</html>
